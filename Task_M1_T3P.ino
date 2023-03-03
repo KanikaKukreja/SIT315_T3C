@@ -33,7 +33,7 @@ void loop()
   Serial.print(" C , ");
   Serial.print(tempF);
   Serial.println(" F ");
-  Serial.println("Motion Detected");
+  //Serial.println("Motion Detected");
 }
 
 void interruptFunction()
@@ -57,5 +57,5 @@ void interruptFunction()
 
 void motioninterrupt()
 {
-  
+  Serial.println("Motion Detected"); //Interrupt that will print motion detected if motion is detected from the motion sensor
 }
